@@ -1,0 +1,47 @@
+{Chef installation, cookbook & recipe create}Amazon machine
+
+Step-1 yum update  -y
+
+step-2 open in browser- chef.sh(select chef workstation copy address URL)
+
+step-3 wget httpd://xyz paste workstation url.
+
+step-4 ls
+
+step-5 yum install  chef-workstation-20.7-xyz.rpm
+
+step-6 which chef(check chef)
+
+step-7 chef -v(check version)
+
+step-8 mkdir cookbooks
+
+step-9 cd cookbooks/
+
+step-10 chef generate cookbook test-cookbook
+
+step-11 yum install tree
+
+step-12 tree
+
+step-13 cd test-cookbook
+
+step-14 chef generate recipe test-recipe
+
+step-15 tree
+
+step-16 cd ..
+
+step-17 vi test-cookbook/recipes/test-recipe.rb
+
+step-18 copy content in recipe
+
+step-19 chef-exec ruby -c test-cookbook/recipes/test-recipe.rb(check to code)
+
+step-20 chef-client -zr "recipe[test-cookbook::test-recipe]"
+
+step-21 ls /
+
+step-22 cat /myfile
+
+
