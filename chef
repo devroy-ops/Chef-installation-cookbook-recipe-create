@@ -36,7 +36,7 @@ step-17 vi test-cookbook/recipes/test-recipe.rb
 
 step-18 copy content in recipe
 
-step-19 chef-exec ruby -c test-cookbook/recipes/test-recipe.rb(check to code)
+step-19 chef exec ruby -c test-cookbook/recipes/test-recipe.rb(check to code)
 
 step-20 chef-client -zr "recipe[test-cookbook::test-recipe]"
 
