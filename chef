@@ -34,6 +34,13 @@ step-16 cd ..
 
 step-17 vi test-cookbook/recipes/test-recipe.rb
 
+file '/myfile' do
+content 'Welcome to engineer world'
+action :create
+end
+
+*********
+
 step-18 copy content in recipe
 
 step-19 chef exec ruby -c test-cookbook/recipes/test-recipe.rb(check to code)
